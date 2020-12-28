@@ -82,7 +82,7 @@ void loop() {
 
   sensorValue = analogRead(sensorPin);
  
-    if(sensorValue>-20)
+    if(sensorValue>-100)
     {
     digitalWrite(ledPin, HIGH);
     Serial.println("Testplotter 1");
@@ -93,35 +93,45 @@ void loop() {
     }
 
      if(sensorValue1>0){
-     digitalWrite(ledPin, HIGH);   
+    digitalWrite(ledPin, HIGH);  
+    Serial.println("Testplotter 1"); 
     Serial.println(sensorValue1);
     /*stepper1.setSpeed(200); */
+    Serial.println("Testplotter 2");
        digitalWrite(ledPin, LOW);
      }
 
     if(sensorValue2>0){
-     digitalWrite(ledPin, HIGH);   
+     digitalWrite(ledPin, HIGH); 
+    Serial.println("Testplotter 1");  
     Serial.println(sensorValue2);
     /*stepper1.setSpeed(200); */
+    Serial.println("Testplotter 2");
        digitalWrite(ledPin, LOW);
      }
 
       if(sensorValue3>0){
-     digitalWrite(ledPin, HIGH);   
+     digitalWrite(ledPin, HIGH); 
+    Serial.println("Testplotter 1");  
     Serial.println(sensorValue3);
     /*stepper1.setSpeed(200); */
+    Serial.println("Testplotter 2"); 
        digitalWrite(ledPin, LOW);
      }
         if(sensorValue4>0){
-     digitalWrite(ledPin, HIGH);   
+     digitalWrite(ledPin, HIGH); 
+    Serial.println("Testplotter 1");   
     Serial.println(sensorValue3);
     /*stepper1.setSpeed(200); */
+    Serial.println("Testplotter 2");
        digitalWrite(ledPin, LOW);
      }
-        if(sensorValue5>-20){
-     digitalWrite(ledPin, HIGH);   
+        if(sensorValue5>-100){
+     digitalWrite(ledPin, HIGH);  
+     Serial.println("Testplotter 1"); 
     Serial.println(sensorValue4);
     /*stepper1.setSpeed(200); */
+     Serial.println("Testplotter 2"); 
        digitalWrite(ledPin, LOW);
      }
       
